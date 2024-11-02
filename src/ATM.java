@@ -25,6 +25,7 @@ public class ATM {
                 }
                 else{
                     myAccount.updateBalance((currentBalance - withdrawlAmount));
+                    System.out.println("Transaction Successfull!");
                     break;
                 }
         
@@ -39,6 +40,7 @@ public class ATM {
         int depositAmount = Integer.parseInt(scanner.nextLine());
 
         myAccount.updateBalance( (currentBalance + depositAmount));
+        System.out.println("Transaction Successfull!");
         checkBalance();
     }
 
